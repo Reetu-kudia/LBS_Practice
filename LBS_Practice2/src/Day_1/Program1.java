@@ -2,6 +2,19 @@ package Day_1;
 
 public class Program1 {
 	public static void main(String[] args) {
-		System.out.println("This is Day1 Program1");
+		int num=7;
+		boolean isPrime=true;
+		for(int i=2;i<num;i++) {
+			if(num%i==0) {
+				isPrime=false;
+				break;
+			}
+		}
+		if(isPrime) {
+			System.out.println("Prime");
+		}
+		else {
+			System.out.println("Not Prime");
+		}
 	}
 }
